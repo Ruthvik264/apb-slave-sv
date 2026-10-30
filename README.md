@@ -83,5 +83,8 @@ Try different configurations such as 0, 1, 2 and 3 to observe the effect on tran
 | Back-to-back writes | Both register values are retained |
 
 
-- Perform synthesis analysis and document resource utilisation.
+## Simulation Results
+
+![APB Results](./waveform_ws3_write.png)
+
 
