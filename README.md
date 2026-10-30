@@ -50,7 +50,7 @@ APB-Slave-Verification/
 
 - SystemVerilog
 - AMD Vivado 2024.2
-- QuestaSim
+
 
 ## Configuration
 
