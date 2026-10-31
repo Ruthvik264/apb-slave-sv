@@ -6,7 +6,7 @@ A parameterized AMBA APB slave implementation using SystemVerilog, with configur
 
 This project implements a simple APB slave supporting memory-mapped register access, configurable wait-state insertion, and error handling for invalid transactions.
 
-The design is verified through a SystemVerilog testbench using QuestaSim/Vivado simulation.
+The design is verified through a SystemVerilog testbench using Vivado simulation.
 
 ## Features
 
@@ -36,14 +36,13 @@ The design is verified through a SystemVerilog testbench using QuestaSim/Vivado 
 ## Project Structure
 
 ```text
-APB-Slave-Verification/
-├── RTL/
-│   └── APB_RTL.sv
-├── Testbench/
-│   └── APB_TB.sv
-├── Simulation/
-│   └── APB_simulation.png
-└── README.md
+   apb-slave-sv/
+   ├── RTL/
+   │   └── APB_RTL.sv
+   ├── testbench/
+   │   └── APB_TB.sv
+   ├── waveform_ws3_write.png
+   └── README.md
 ```
 
 ## Tools Used
@@ -54,7 +53,7 @@ APB-Slave-Verification/
 
 ## Configuration
 
-The number of wait states can be changed through the `WAIT_STATES` parameter in the testbench.
+The number of wait states can be changed through the `WS (wait_states)` parameter in the testbench.
 
 ```systemverilog
 localparam int WS = 3;
@@ -87,4 +86,9 @@ Try different configurations such as 0, 1, 2 and 3 to observe the effect on tran
 
 ![APB Results](./waveform_ws3_write.png)
 
+*Write of 0x12345678 to 0x00 with WAIT_STATES=3. PREADY is low for 3 wait cycles and high on the 4th; PSLVERR stays low.*
 
+
+![APB read and write with WAIT_STATES=2](./waveform_ws2_read_write.png)
+
+*Read of 0x0C followed by a write of 0x12345678 to 0x00 with WAIT_STATES=2. In each transfer PREADY is low for 2 wait cycles and high on the 3rd edge, completing the transfer. PSLVERR stays low.*
