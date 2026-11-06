@@ -2,13 +2,13 @@
 
 ## Overview
 
-This project implements a UVM-based verification environment for an APB Slave with programmable wait states and a memory-mapped register interface.
+This project implements a UVM-based verification environment for an APB Slave with parameterized wait states and a memory-mapped register interface.
 
 The testbench uses standard UVM components to generate transactions, drive APB signals, monitor completed transfers, and check DUT responses using a reference model.
 
 ## DUT Features
 
-- APB slave supporting programmable wait states.
+- APB slave supporting parameterized wait states.
 - CTRL register (0x00): Read/Write.
 - DATA register (0x04): Read/Write.
 - STATUS register (0x08): Read-only.
