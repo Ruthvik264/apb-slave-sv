@@ -1,0 +1,179 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Sat Nov 21 12:12:55 2026
+| Host              : OPTIMUS_45 running 64-bit major release  (build 9200)
+| Command           : check_timing -verbose -file C:/Users/ruthv/Downloads/APB/check_timing.txt
+| Design            : APB_RTL
+| Device            : xck24-ubva530
+| Speed File        : -2LVI  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : I
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (44)
+6. checking no_output_delay (34)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (44)
+-------------------------------
+ There are 44 input ports with no input delay specified. (HIGH)
+
+PADDR[0]
+PADDR[1]
+PADDR[2]
+PADDR[3]
+PADDR[4]
+PADDR[5]
+PADDR[6]
+PADDR[7]
+PENABLE
+PRESETn
+PSEL
+PWDATA[0]
+PWDATA[10]
+PWDATA[11]
+PWDATA[12]
+PWDATA[13]
+PWDATA[14]
+PWDATA[15]
+PWDATA[16]
+PWDATA[17]
+PWDATA[18]
+PWDATA[19]
+PWDATA[1]
+PWDATA[20]
+PWDATA[21]
+PWDATA[22]
+PWDATA[23]
+PWDATA[24]
+PWDATA[25]
+PWDATA[26]
+PWDATA[27]
+PWDATA[28]
+PWDATA[29]
+PWDATA[2]
+PWDATA[30]
+PWDATA[31]
+PWDATA[3]
+PWDATA[4]
+PWDATA[5]
+PWDATA[6]
+PWDATA[7]
+PWDATA[8]
+PWDATA[9]
+PWRITE
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (34)
+--------------------------------
+ There are 34 ports with no output delay specified. (HIGH)
+
+PRDATA[0]
+PRDATA[10]
+PRDATA[11]
+PRDATA[12]
+PRDATA[13]
+PRDATA[14]
+PRDATA[15]
+PRDATA[16]
+PRDATA[17]
+PRDATA[18]
+PRDATA[19]
+PRDATA[1]
+PRDATA[20]
+PRDATA[21]
+PRDATA[22]
+PRDATA[23]
+PRDATA[24]
+PRDATA[25]
+PRDATA[26]
+PRDATA[27]
+PRDATA[28]
+PRDATA[29]
+PRDATA[2]
+PRDATA[30]
+PRDATA[31]
+PRDATA[3]
+PRDATA[4]
+PRDATA[5]
+PRDATA[6]
+PRDATA[7]
+PRDATA[8]
+PRDATA[9]
+PREADY
+PSLVERR
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
